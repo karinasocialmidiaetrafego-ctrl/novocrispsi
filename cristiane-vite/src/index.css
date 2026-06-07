@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(0.9620 0.0080 80);
+  --foreground: oklch(0.3300 0.0080 160);
+  --card: oklch(0.9700 0.0070 85);
+  --card-foreground: oklch(0.3300 0.0080 160);
+  --popover: oklch(0.9700 0.0070 85);
+  --popover-foreground: oklch(0.3300 0.0080 160);
+  --primary: oklch(0.5000 0.0250 145);
+  --primary-hover: oklch(0.4250 0.0250 145);
+  --primary-foreground: oklch(0.9700 0.0070 85);
+  --secondary: oklch(0.9100 0.0120 150);
+  --secondary-foreground: oklch(0.3300 0.0080 160);
+  --muted: oklch(0.9100 0.0120 150);
+  --muted-foreground: oklch(0.6200 0.0120 155);
+  --accent: oklch(0.6200 0.0120 155);
+  --accent-foreground: oklch(0.9700 0.0070 85);
+  --gold: oklch(0.6200 0.0120 155);
+  --rose: oklch(0.9100 0.0120 150);
+  --cream: oklch(0.9700 0.0070 85);
+  --gradient-warm: linear-gradient(135deg, oklch(0.9620 0.0080 80), oklch(0.9100 0.0120 150));
+  --shadow-soft: 0 20px 60px -20px oklch(0.5000 0.0250 145 / 0.22);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.8700 0.0100 150);
+  --input: oklch(0.8700 0.0100 150);
+  --ring: oklch(0.5000 0.0250 145);
+}
+
+@layer base {
+  * { border-color: var(--border); }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Jost', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .font-display {
+    font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+    letter-spacing: -0.01em;
+  }
+  .font-script {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+  }
+  html { scroll-behavior: smooth; }
+
+  @keyframes float-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .animate-float-up { animation: float-up 0.9s ease-out both; }
+
+  @keyframes gentle-pulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 10px 30px -10px oklch(0.5222 0.0212 68.74 / 0.5); }
+    50% { transform: scale(1.06); box-shadow: 0 14px 36px -8px oklch(0.5222 0.0212 68.74 / 0.65); }
+  }
+  .animate-gentle-pulse { animation: gentle-pulse 2.6s ease-in-out infinite; }
+}
