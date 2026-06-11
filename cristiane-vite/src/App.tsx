@@ -7,6 +7,7 @@ import heroImg from "@/assets/hero-poltrona.png";
 import aboutImg from "@/assets/sobre-consultorio.png";
 import mentoriaImg from "@/assets/mentoria-notebook.png";
 import finalImg from "@/assets/final-sofa.png";
+import tdahImg from "@/assets/tdah.png";
 
 const WHATSAPP = "5534993337055";
 const WA_LINK = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(
@@ -338,7 +339,7 @@ function TDAH() {
         <div className="relative">
           <div className="absolute -inset-6 rounded-[2.5rem] -z-10" style={{ background: "var(--gradient-warm)" }} />
           <img
-            src={heroImg}
+            src={tdahImg}
             alt="Cristiane Rodrigues - avaliação de TDAH"
             className="w-full aspect-[4/5] object-cover rounded-[2rem] shadow-[var(--shadow-soft)]"
             loading="lazy"
