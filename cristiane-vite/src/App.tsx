@@ -16,7 +16,7 @@ const WA_LINK = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(
 const WA_MENTORIA = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(
   "Olá Dra. Cristiane, gostaria de solicitar supervisão ou mentoria."
 )}`;
-const INSTAGRAM_URL = "https://instagram.com/psic.cristianerodriguez";
+const INSTAGRAM_URL = "https://instagram.com/psico.cristianerodriguez";
 const EMAIL = "cristiane.rrodriguez@gmail.com";
 
 export default function App() {
