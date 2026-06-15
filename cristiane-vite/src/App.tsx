@@ -503,7 +503,7 @@ function Footer() {
       <div className="container mx-auto max-w-6xl px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
         <span className="font-display text-xl text-primary">Cristiane Rodrigues</span>
         <span>© {new Date().getFullYear()} — Todos os direitos reservados.</span>
-        <span>Psicóloga Clínica · CRP 04/12345</span>
+        <span>Psicóloga Clínica · CRP 04/61761</span>
       </div>
     </footer>
   );
