@@ -104,10 +104,7 @@ function Hero() {
       />
       <div className="container mx-auto max-w-6xl px-6 grid md:grid-cols-12 gap-12 md:gap-16 items-center">
         <div className="md:col-span-7 animate-float-up">
-          <span className="inline-flex items-center gap-2 text-xs tracking-[0.25em] uppercase text-primary/80 mb-5">
-            <Sparkles className="w-3.5 h-3.5" />
-            Psicóloga · Neuropsicóloga
-          </span>
+          
           <p className="font-display text-3xl md:text-4xl text-primary leading-tight">
             Cristiane <span className="font-script">Rodrigues</span>
           </p>
